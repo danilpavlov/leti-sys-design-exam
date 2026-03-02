@@ -1,0 +1,43 @@
+[project]
+site_name = "MMPI — Методы и модели программной инженерии"
+site_description = "Учебные материалы и подготовка к экзамену по курсу MMPI"
+site_author = "Pavlov"
+docs_dir = "docs"
+site_dir = "site"
+use_directory_urls = true
+dev_addr = "localhost:8000"
+extra_css = ["stylesheets/extra.css"]
+
+nav = [
+    {"Главная" = "index.md"},
+    {"Теория" = [
+        {"RUP и Vision" = "theory/01_rup_vision.md"},
+        {"Требования" = "theory/02_requirements.md"},
+        {"Пользователи и Use Case" = "theory/03_users_usecases.md"},
+        {"Структура Use Case" = "theory/04_usecase_structure.md"},
+        {"Domain Model" = "theory/05_domain_model.md"},
+        {"Анализ пользователей" = "theory/06_user_research.md"},
+        {"Эвристики Нильсена" = "theory/07_nielsen.md"},
+        {"Гештальт принципы" = "theory/08_gestalt.md"},
+        {"Ментальные модели" = "theory/09_mental_models.md"},
+    ]},
+    {"Квиз" = "quiz.md"},
+]
+
+[project.theme]
+variant = "modern"
+language = "ru"
+
+[project.theme.palette]
+scheme = "default"
+primary = "indigo"
+accent = "amber"
+
+[project.theme.features]
+navigation_instant = true
+navigation_tabs = true
+navigation_sections = true
+navigation_top = true
+toc_integrate = true
+search_suggest = true
+search_highlight = true
